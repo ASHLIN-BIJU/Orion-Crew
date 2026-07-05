@@ -131,9 +131,11 @@ body {
 
 /* Custom Input Styles */
 input[type="text"],
+input[type="email"],
+input[type="tel"],
 select,
 textarea {
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(211, 84, 0, 0.2);
     color: #f5ebe0;
     border-radius: 0.75rem;
@@ -146,17 +148,21 @@ textarea {
 }
 
 input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover,
 select:hover,
 textarea:hover {
     background: rgba(211, 84, 0, 0.05);
 }
 
 input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
 select:focus,
 textarea:focus {
     border-color: #d35400;
     /* Spice Orange */
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.4);
     box-shadow: 0 0 0 4px rgba(211, 84, 0, 0.15);
     /* Orange glow */
 }
@@ -171,6 +177,7 @@ input::placeholder,
 textarea::placeholder {
     color: #a3958c;
     /* Sandy placeholder */
+    opacity: 0.5;
 }
 
 /* Custom Checkbox */
